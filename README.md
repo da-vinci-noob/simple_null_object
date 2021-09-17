@@ -20,7 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+> If some object is nil we can set it to our NullObject which has some predefined methods
+
+```ruby
+@post = nil
+post = @post || SimpleNullObject::Pattern
+```
+
+> Now We can use the methods on post as @post is nil.
+
+Methods available are.
+
+```ruby
+post.current_user # Guest User
+post.id # Record Not Found Error
+post.valid? # false
+post.present? # false
+post.blank? # true
+post.save # false
+post.save! # RecordInvalid Error
+post.update # false
+post.update! # RecordInvalid Error
+```
 
 ## Development
 
