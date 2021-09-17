@@ -10,6 +10,12 @@ Add this line to your application's Gemfile:
 gem 'simple_null_object'
 ```
 
+or
+
+```ruby
+gem 'simple_null_object', git: 'https://github.com/da-vinci-noob/simple_null_object.git'
+```
+
 And then execute:
 
     $ bundle install
